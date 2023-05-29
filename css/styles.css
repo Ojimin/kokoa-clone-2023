@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"); 
+/* 폰트 설정할 때 이런식으로 import 하는게 가벼움*/
+@import "reset.css";
+@import "variables.css";
+/*reset css는 기본적으로 브라우저에서 제공하는 body의 margin을 없애는 것*/
+/*h1, p tag같은 텍스트를 다루는 tag들을 가운데 정렬할 때는 text-align: center 을 이용해야함*/
+/*Components*/
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+
+/*Screens*/
+@import "screens/login.css";
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
