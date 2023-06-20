@@ -1,8 +1,36 @@
 .nav {
+    position: fixed; /*스크롤해도 nav bar 고정*/
+    bottom: 0;
+    width: 100%;
     background-color: #f9f9fa;
-    padding: 20px 40px;
+    padding: 20px 50px;
+    box-sizing: border-box; /*box 크기를 유지한 채로 padding을 줄 수 있음*/
+    border-top : 1px solid rgba(0, 0, 0, 0.3);
 }
 .nav__list {
     display: flex;
     justify-content: space-between;
+}
+
+/*
+reset.css에 있는 것을 상속받음
+*/
+.nav__link {
+    color: #2e363e;
+    position: relative;
+}
+
+.nav__notification {
+    background-color: tomato;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    position: absolute; /*가장 가까운 relative를 가진 부모 기준으로 움직이는것*/
+    left: 15px;
+    bottom: 15px; 
 }

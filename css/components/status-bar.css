@@ -1,7 +1,13 @@
 .status-bar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding: 5px 3px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    z-index: 2;
 }
 
 /*css hack(justify content 대신 사용 가능)*/

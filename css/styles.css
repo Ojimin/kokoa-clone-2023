@@ -4,14 +4,17 @@
 @import "variables.css";
 /*reset css는 기본적으로 브라우저에서 제공하는 body의 margin을 없애는 것*/
 /*h1, p tag같은 텍스트를 다루는 tag들을 가운데 정렬할 때는 text-align: center 을 이용해야함*/
-/*Components*/
+/*Components - 재사용됨/
 @import "components/status-bar.css";
 @import "components/nav-bar.css";
+@import "components/screen-header.css";
 
-/*Screens*/
+/*Screens - 재사용안됨*/
 @import "screens/login.css";
+@import "screens/friends.css";
 
 body {
+  color: #2e363e;
   font-family: "Open Sans", sans-serif;
 }
 
